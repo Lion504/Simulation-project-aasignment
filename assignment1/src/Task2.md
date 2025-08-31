@@ -1,7 +1,6 @@
 
 # Analysis of the Helsinki Airport System
-## The Helsinki Airport system manages passenger flow, baggage handling, weather and flight operations. 
-At this time I will ignore security. Helsinki Airport handles both international and domestic traffic.
+## The Helsinki Airport system manages passenger flow, baggage handling, weather and flight operations. It handles both international and domestic traffic.
 ### 1.Variability
 - **Predictable**: there are daily repeatly rush hours for morning departures and evening arrivals.
   Flight schedules and seasonal travel peaks are predictable.
