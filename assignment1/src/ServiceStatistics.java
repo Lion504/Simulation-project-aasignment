@@ -19,7 +19,7 @@ public class ServiceStatistics {
         System.out.println("-".repeat(50));
 
         for (ServiceRecord record : records) {
-            double waitingMs = record.getWaitingTime() / 1_000_000.0;
+            double waitingMs = record.getWaitingTime() / 1_000_000.0; // convert nanoTime
             double serviceMs = record.getServiceTime() / 1_000_000.0;
             double responseMs = record.getResponseTime() / 1_000_000.0;
 
