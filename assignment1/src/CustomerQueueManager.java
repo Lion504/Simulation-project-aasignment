@@ -10,7 +10,7 @@ public class CustomerQueueManager {
 
     public void enqueue(Customer customer) {
         customer.setStartTime(System.nanoTime()); // Set queue entry time
-        queue.addFirst(customer); // Add to front (FIFO)
+        queue.addFirst(customer); // Add to front
         System.out.println("✓ Customer ID " + customer.getId() + " added to queue");
     }
 
@@ -18,7 +18,7 @@ public class CustomerQueueManager {
         if (queue.isEmpty()) {
             return null;
         }
-        Customer customer = queue.removeLast(); // Remove from end (FIFO)
+        Customer customer = queue.removeLast(); // Remove from end
         customer.setEndTime(System.nanoTime()); // Set queue exit time
         return customer;
     }

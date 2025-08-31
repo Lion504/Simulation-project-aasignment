@@ -21,7 +21,7 @@ public class ServicePoint {
         if (queue.isEmpty()) {
             return null;
         }
-        return queue.removeLast(); // FIFO - remove from end
+        return queue.removeLast(); //remove from end
     }
 
     public void serve() {
@@ -31,10 +31,10 @@ public class ServicePoint {
             Customer customer = removeFromQueue();
             long queueExitTime = System.nanoTime();
 
-            // Calculate waiting time in queue
+            // Calculate waiting time
             long waitingTime = queueExitTime - customer.getStartTime();
 
-            // Generate random service time (1000-5000 ms)
+            // random service time
             int serviceTimeMs = (int)(Math.random() * 4000) + 1000;
             long serviceTimeNs = serviceTimeMs * 1_000_000L;
 
@@ -55,12 +55,11 @@ public class ServicePoint {
             // Calculate times
             long totalResponseTime = serviceCompleteTime - customer.getStartTime();
 
-            // Store service record for statistics
+            // Store record for statistics
             ServiceRecord record = new ServiceRecord(customer.getId(),
                     waitingTime, serviceTimeNs, totalResponseTime);
             serviceRecords.add(record);
 
-            // Print results
             System.out.printf("Customer ID %d served:%n", customer.getId());
             System.out.printf("- Waiting time: %.3f ms%n", waitingTime / 1_000_000.0);
             System.out.printf("- Service time: %.3f ms%n", serviceTimeNs / 1_000_000.0);
@@ -83,7 +82,7 @@ public class ServicePoint {
     }
 }
 
-// Helper class to store service statistics
+//to store service statistics
 class ServiceRecord {
     private final int customerId;
     private final long waitingTime;
