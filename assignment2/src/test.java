@@ -14,7 +14,7 @@ public class test {
         System.out.println("=== Served Event List ===");
         while (!list.isEmpty()) {
             Event event = list.getNextEvent();
-            System.out.println("nextEvent: %s %n" + event);
+            System.out.println("nextEvent: " + event);
         }
 
         System.out.println("=== Current Event List ===");
