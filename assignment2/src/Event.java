@@ -3,7 +3,7 @@ public class Event implements Comparable<Event> {
     private double eventTime;
     private EventType eventType;
 
-    public Event(String eventName, double eventTime) {
+    public Event(String eventName, double eventTime, EventType eventType) {
         this.eventName = eventName;
         this.eventTime = eventTime;
         this.eventType = eventType;

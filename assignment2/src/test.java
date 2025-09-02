@@ -1,10 +1,10 @@
 public class test {
     public static void main(String[] args) {
         EventList list = new EventList();
-        list.addEvent(new Event("a1", 5));
-        list.addEvent(new Event("a2", 2));
-        list.addEvent(new Event("a3", 7));
-        list.addEvent(new Event("a4", 1));
+        list.addEvent(new Event("a1", 2, EventType.ARRIVAL));
+        list.addEvent(new Event("a2", 5, EventType.ARRIVAL));
+        list.addEvent(new Event("a1", 7, EventType.EXIT));
+        list.addEvent(new Event("a2", 10, EventType.EXIT));
 
         System.out.println("=== Current Event List ===");
         for (Event e : list.getEventsOrdered()) {
