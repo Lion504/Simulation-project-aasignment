@@ -31,7 +31,7 @@ public class SeedGenerator implements DiscreteGenerator {
 
     private static SeedGenerator defaut = new SeedGenerator();
     // package: accessible only from the generators within the package
-    static SeedGenerator getDefaultSeedGenerator() { return defaut; }
+    public static SeedGenerator getDefaultSeedGenerator() { return defaut; }
     static void setDefaultSeedGenerator(long seed, int spacing) {
 	defaut = new SeedGenerator(seed, spacing);
     }

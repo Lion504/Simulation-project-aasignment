@@ -5,8 +5,8 @@ package distributions;
  */
 public abstract class Generator implements Seedable {
     protected Distributions distrib;
-    Generator () { distrib = new Distributions(); }
-    Generator (long seed) { distrib = new Distributions(seed); }
+    protected Generator() { distrib = new Distributions(); }
+    protected Generator(long seed) { distrib = new Distributions(seed); }
     
     // ----- implements Seedable { -----
     public void setSeed(long seed) { distrib.source.setSeed(seed); }
