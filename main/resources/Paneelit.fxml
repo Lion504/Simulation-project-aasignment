@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PanelsController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="4.0" layoutY="70.0" prefHeight="300.0" prefWidth="590.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="startButton" layoutX="45.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="25.0" prefWidth="82.0" text="Start" />
+                  <Button fx:id="simuloiButton" layoutX="55.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleSimulation" text="Simulate" />
+                  <Label layoutX="45.0" layoutY="14.0" prefHeight="17.0" prefWidth="82.0" text="Press first Start" />
+                  <ChoiceBox fx:id="simustepsBox" layoutX="11.0" layoutY="179.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="animationSelBox" layoutX="11.0" layoutY="213.0" prefWidth="150.0" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Canvas fx:id="visu" height="280.0" width="400.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
