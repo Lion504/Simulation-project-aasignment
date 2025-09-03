@@ -1,0 +1,7 @@
+## Task3
+
+Because the Singleton constructor is private, external class can not invoke new to create the instance for it.
+
+The Singleton class provide a getInstance() method. That is their method to prevent multiple instance and
+
+ensure global access to a shared resource
