@@ -45,7 +45,7 @@ while simulation not finished:
 update performance statistics periodically or at end
 print collected statistics
 ### Task5
-- A_phase: Scheduling and managing arrival events (adding newcomers to queues, incrementing arrival counters). Explanation: In Storage, add entity to queue and increment A; schedule next arrival in event list.
+- A_phase: Scheduling and managing arrival events (adding newpassenger to queues, incrementing arrival counters). Explanation: In Storage, add newpassenger to queue and increment A; schedule next arrival in event list.
 
 - B_phase: Handling beginning of services (starting service, allocating servers, updating busy times). Explanation: In Estimator, check if server free, start service, update B, and schedule completion event.
 
