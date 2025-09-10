@@ -25,6 +25,7 @@
 - System 2: International Arrival Process
 ![alt text](image-1.png)
 ### Task 4
+```pseudocode	
 initialize simulation clock time T=0
 initialize event list (arrival, service completions, service starts)
 while simulation not finished:
@@ -44,6 +45,7 @@ while simulation not finished:
             start next service (update busy time B)
 update performance statistics periodically or at end
 print collected statistics
+```	
 ### Task5
 - A_phase: Scheduling and managing arrival events (adding newpassenger to queues, incrementing arrival counters). Explanation: In Storage, add newpassenger to queue and increment A; schedule next arrival in event list.
 
